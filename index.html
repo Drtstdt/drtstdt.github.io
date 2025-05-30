@@ -1,79 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <title>Vote for X – School President 2025</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DIP – Wybory Samorządu</title>
   <style>
     body {
+      margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f0f4f8;
-      color: #333;
-      margin: 0;
-      padding: 0;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: #fff;
+      text-align: center;
+      padding: 0 20px;
     }
+
     header {
-      background-color: #4CAF50;
-      color: white;
-      padding: 40px;
-      text-align: center;
+      padding: 60px 20px 20px;
     }
+
     h1 {
-      margin: 0;
+      font-size: 3em;
+      margin-bottom: 0.2em;
+      background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
-    .content {
-      padding: 30px;
-      max-width: 800px;
-      margin: auto;
-      background: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+    h2 {
+      font-weight: 400;
+      font-size: 1.5em;
+      margin-top: 0;
     }
-    .profile-img {
-      width: 150px;
-      border-radius: 50%;
-      margin: 20px auto;
-      display: block;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    ul li::before {
-      content: "✔️";
-      margin-right: 10px;
-    }
-    .cta {
-      background-color: #4CAF50;
-      color: white;
-      padding: 15px 20px;
-      text-align: center;
+
+    .btn {
+      display: inline-block;
       margin-top: 30px;
+      padding: 15px 30px;
       font-size: 1.2em;
-      border-radius: 8px;
+      background: linear-gradient(45deg, #ff6a00, #ee0979);
+      border: none;
+      border-radius: 30px;
+      color: white;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    section {
+      margin: 50px auto;
+      max-width: 700px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 0.9em;
+      opacity: 0.7;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Vote X for School President</h1>
-  <p>Your Voice. Your Choice. Your Future.</p>
-</header>
+  <header>
+    <h1>DIP</h1>
+    <h2>Działamy. Inspirujemy. Pomagamy.</h2>
+    <a href="#program" class="btn">Poznaj nasz plan!</a>
+  </header>
 
-<div class="content">
-  <img src="your-photo.jpg" alt="X Photo" class="profile-img">
-  
-  <h2>Why Vote for X?</h2>
-  <ul>
-    <li>Better school events & activities</li>
-    <li>More student voice in decisions</li>
-    <li>Improved cafeteria options</li>
-    <li>Support for mental health programs</li>
-  </ul>
+  <section id="program">
+    <h2>Nasz Program:</h2>
+    <ul style="text-align: left; line-height: 1.8; font-size: 1.1em;">
+      <li>🎉 Dzień bez plecaka, dzień piżamy, więcej integracji!</li>
+      <li>📶 Lepsze Wi-Fi, uczniowski Discord i szybkie konsultacje.</li>
+      <li>🎤 Przerwy z muzyką, turnieje klas, szkolne wydarzenia.</li>
+      <li>🍕 Akcje tematyczne i więcej głosu uczniów w decyzjach.</li>
+    </ul>
+  </section>
 
-  <div class="cta">
-    🗳️ Vote for X on June 10th in the school gym!
-  </div>
-</div>
+  <section>
+    <h2>Kandydaci DIP</h2>
+    <p>Jesteśmy grupą uczniów z pomysłem, pasją i energią. Nie obiecujemy cudów – działamy tam, gdzie inni tylko mówią.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 DIP Samorząd Uczniowski – Głosuj z głową!</p>
+  </footer>
 
 </body>
 </html>
